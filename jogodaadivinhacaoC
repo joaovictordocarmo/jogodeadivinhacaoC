@@ -17,7 +17,13 @@ int main() {
     //se chutou o valor certo,mostre uma mensagem,do contrario,mostre outra mensagem.
     if(chute == numerosecreto){
         printf("voce acertou!\n");
-        }else{
+         }else{
+             if(chute > numerosecreto){
+                 printf("O seu chute foi maior que o numero secreto,tente novamente. \n");
+            if(chute < numerosecreto){
+                printf("O seu chute foi menor que o numero secreto,tente novamente.\n");
+                 }
+             }
             printf("voce errou!\n");
         }
     }
